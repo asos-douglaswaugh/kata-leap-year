@@ -10,7 +10,7 @@ public class Tests
     [Test]
     public void Year_1_is_not_a_leap_year()
     {
-        var isLeapYear = false;
+        var isLeapYear = IsLeapYear(1);
 
         Assert.That(isLeapYear, Is.False);
     }
@@ -29,5 +29,11 @@ public class Tests
         var isLeapYear = false;
 
         Assert.That(isLeapYear, Is.False);
+    }
+
+    private static bool IsLeapYear(int year)
+    {
+        var isLeapYear = false;
+        return isLeapYear;
     }
 }
