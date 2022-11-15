@@ -14,4 +14,12 @@ public class Tests
 
         Assert.That(isLeapYear, Is.False);
     }
+
+    [Test]
+    public void Year_2_is_not_a_leap_year()
+    {
+        var isLeapYear = false;
+
+        Assert.That(isLeapYear, Is.False);
+    }
 }
