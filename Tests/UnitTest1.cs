@@ -26,7 +26,7 @@ public class Tests
     {
         var isLeapYear = false;
 
-        if ((year == 4) || (year == 8) || (year == 12))
+        if (year % 4 == 0)
             isLeapYear = true;
 
         return isLeapYear;
