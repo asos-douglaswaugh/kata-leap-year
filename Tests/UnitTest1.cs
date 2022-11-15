@@ -13,6 +13,7 @@ public class Tests
     }
 
     [TestCase(4)]
+    [TestCase(8)]
     public void Is_a_leap_year(int year)
     {
         var isLeapYear = IsLeapYear(year);
@@ -24,7 +25,7 @@ public class Tests
     {
         var isLeapYear = false;
 
-        if (year == 4)
+        if ((year == 4) || (year == 8))
             isLeapYear = true;
 
         return isLeapYear;
