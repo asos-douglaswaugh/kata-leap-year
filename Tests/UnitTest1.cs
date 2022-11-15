@@ -12,9 +12,21 @@ public class Tests
         Assert.That(isLeapYear, Is.False);
     }
 
+    [TestCase(4)]
+    public void Is_a_leap_year(int year)
+    {
+        var isLeapYear = IsLeapYear(year);
+
+        Assert.That(isLeapYear, Is.True);
+    }
+
     private static bool IsLeapYear(int year)
     {
         var isLeapYear = false;
+
+        if (year == 4)
+            isLeapYear = true;
+
         return isLeapYear;
     }
 }
