@@ -18,7 +18,7 @@ public class Tests
     [Test]
     public void Year_2_is_not_a_leap_year()
     {
-        var isLeapYear = false;
+        var isLeapYear = IsLeapYear(2);
 
         Assert.That(isLeapYear, Is.False);
     }
@@ -26,7 +26,7 @@ public class Tests
     [Test]
     public void Year_3_is_not_a_leap_year()
     {
-        var isLeapYear = false;
+        var isLeapYear = IsLeapYear(3);
 
         Assert.That(isLeapYear, Is.False);
     }
