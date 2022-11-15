@@ -2,11 +2,6 @@ namespace Tests;
 
 public class Tests
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
     [TestCase(1)]
     [TestCase(2)]
     [TestCase(3)]
