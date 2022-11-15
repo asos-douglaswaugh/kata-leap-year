@@ -8,8 +8,10 @@ public class Tests
     }
 
     [Test]
-    public void Test1()
+    public void Year_1_is_not_a_leap_year()
     {
-        Assert.Pass();
+        var isLeapYear = false;
+
+        Assert.That(isLeapYear, Is.False);
     }
 }
