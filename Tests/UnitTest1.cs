@@ -5,6 +5,7 @@ public class Tests
     [TestCase(1)]
     [TestCase(2)]
     [TestCase(3)]
+    [TestCase(100)]
     public void Is_not_a_leap_year(int year)
     {
         var isLeapYear = IsLeapYear(year);
@@ -25,6 +26,9 @@ public class Tests
     private static bool IsLeapYear(int year)
     {
         var isLeapYear = false;
+
+        if (year % 100 == 0)
+            return false;
 
         if (year % 4 == 0)
             isLeapYear = true;
