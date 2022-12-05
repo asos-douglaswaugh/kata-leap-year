@@ -16,6 +16,7 @@ public class Tests
     [TestCase(4)]
     [TestCase(8)]
     [TestCase(12)]
+    [TestCase(400)]
     public void Is_a_leap_year(int year)
     {
         var isLeapYear = IsLeapYear(year);
@@ -25,6 +26,9 @@ public class Tests
 
     private static bool IsLeapYear(int year)
     {
+        if (year % 400 == 0)
+            return true;
+
         if (year % 100 == 0)
             return false;
 
