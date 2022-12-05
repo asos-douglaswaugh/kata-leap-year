@@ -6,6 +6,8 @@ public class Tests
     [TestCase(2)]
     [TestCase(3)]
     [TestCase(100)]
+    [TestCase(1997)]
+    [TestCase(1800)]
     public void Is_not_a_leap_year(int year)
     {
         var isLeapYear = IsLeapYear(year);
@@ -17,6 +19,8 @@ public class Tests
     [TestCase(8)]
     [TestCase(12)]
     [TestCase(400)]
+    [TestCase(1996)]
+    [TestCase(1600)]
     public void Is_a_leap_year(int year)
     {
         var isLeapYear = IsLeapYear(year);
